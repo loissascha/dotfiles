@@ -1,8 +1,10 @@
 --[[
 
      Awesome WM configuration template
-     github.com/lcpz
+     Original template by: github.com/lcpz
+     Edited by: github.com/loissascha
 
+     it's not pretty but it works (for me) :)
 --]]
 
 -- {{{ Required libraries

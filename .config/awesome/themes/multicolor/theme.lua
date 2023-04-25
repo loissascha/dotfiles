@@ -3,6 +3,8 @@
      Multicolor Awesome WM theme 2.0
      github.com/lcpz
 
+     slightly edited by: github.com/loissascha
+
 --]]
 
 local gears = require("gears")
