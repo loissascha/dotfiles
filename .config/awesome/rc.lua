@@ -657,6 +657,7 @@ awful.rules.rules = {
           "MessageWin",  -- kalarm.
           "Sxiv",
           "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
+          "Steam",
           "Wpa_gui",
           "veromix",
           "xtightvncviewer"},
@@ -677,6 +678,9 @@ awful.rules.rules = {
     { rule_any = {type = { "normal", "dialog" }
       }, properties = { titlebars_enabled = true }
     },
+
+    --{ rule = { class = "Steam", name = "Friends List" },
+    --    properties = { floating = true, titlebars_enabled = false } },
 
     -- Set Firefox to always map on the tag named "2" on screen 1.
     -- { rule = { class = "Firefox" },
@@ -749,9 +753,9 @@ client.connect_signal("request::titlebars", function(c)
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.
-client.connect_signal("mouse::enter", function(c)
-    c:emit_signal("request::activate", "mouse_enter", {raise = vi_focus})
-end)
+--client.connect_signal("mouse::enter", function(c)
+--    c:emit_signal("request::activate", "mouse_enter", {raise = vi_focus})
+--end)
 
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
@@ -801,3 +805,4 @@ awful.spawn.with_shell("xscreensaver -no-splash")
 
 --awful.spawn.with_shell("krunner")
 --awful.spawn.with_shell("nitrogen --restore")
+
