@@ -83,6 +83,11 @@ $float: 5px;
         @include panel_button($flat: true);
     }
 
+    .panel-button > * {
+        padding-left:13px;
+        padding-right:13px;
+    }
+
     .quicksettings > box > * {
         margin: 0 $spacing/2;
         &:last-child { margin-right: 0; }
@@ -114,7 +119,7 @@ $float: 5px;
     }
 
     .workspaces {
-        > * { padding: 0; }
+        > * { padding: 10px; }
 
         .eventbox {
             transition: $transition;
@@ -192,4 +197,9 @@ $float: 5px;
             button > * { margin: 0 $float; }
         }
     }
+}
+
+.launcher.panel-button > * {
+  padding-left:10px;
+  padding-right:13px;
 }

@@ -146,6 +146,38 @@ const ivory = {
     `,
 };
 
+const catppuccin_mocha_split = {
+  name: 'catppuccin_mocha_split',
+  icon: '󰄛',
+  ...dark,
+  ...misc, 
+  ...colors,
+  bg_color: 'transparentize(#1e1e2e, 0.3)',
+  accent: '#f38ba8',
+  //accent: '#cba6f7',
+  border_color: '#313244',
+  bar_style: 'separated',
+  widget_bg: '$accent',
+  widget_bg: '#45475a',
+  drop_shadow: false,
+  widget_opacity: 64,
+  drop_shadow: false,
+  border_width: 2, 
+  border_opacity: 0,
+  radii: 9,
+  spacing: 4,
+  wm_gaps: 15,
+  active_gradient: 'to right, $accent, darken($accent, 6%)',
+  hypr_active_border: 'rgba(f38ba8ff)',
+  hypr_inactive_border: 'rgba(11111bff)'
+};
+
+const catppuccin_mocha = {
+  ...catppuccin_mocha_split,
+  name: 'catppuccin_mocha',
+  bar_style: 'floating'
+};
+
 const cutefish = {
     ...kitty_dark,
     wallpaper: WP + 'cutefish.jpeg',
@@ -181,4 +213,6 @@ export default [
     ivory,
     cutefish,
     cherry,
+    catppuccin_mocha,
+    catppuccin_mocha_split
 ];

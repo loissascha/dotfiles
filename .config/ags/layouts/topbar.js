@@ -11,8 +11,25 @@ import { PanelButton as DashBoard } from './widgets/dashboard.js';
 import { PanelButton as ScreenRecord } from '../modules/screenrecord.js';
 import { PanelButton as QuickSettings } from './widgets/quicksettings.js';
 import { PanelButton as SearchButton } from './widgets/search.js';
+const { Icon, Label, Box, Button } = ags.Widget;
+const { SystemTray } = ags.Service;
 
-
+const systemtray = Box({
+  connections: [[SystemTray, box => {
+    const arr = SystemTray.items;
+        box.children = arr.map(item => Button({
+            //call the Activate function when icon is clicked
+            //Note: if item.ItemIsMenu is true, left click should open menu
+            onPrimaryClick: (_, event) => item.ActivateAsync(event.get_root_coords()[1], event.get_root_coords()[2]),
+            //open menu on right click.
+            //Note: if item.Menu is not set item.ContextMenuAsync(x, y) should be called.
+            onSecondaryClick: (_, event) => item.AgsMenu.popup_at_pointer(event),
+            //show icon with specific size
+            child: SystemTray.get_icon(item),
+            tooltipMarkup: SystemTray.get_tooltip_markup(item)
+        }));
+  }]],
+});
 
 const Bar = monitor => shared.Bar({
     anchor: 'top left right',
@@ -33,6 +50,8 @@ const Bar = monitor => shared.Bar({
     end: [
         NotificationIndicator({ direction: 'right', hexpand: true, halign: 'start' }),
         ags.Widget.Box({ hexpand: true }),
+        monitor == "2" ? systemtray : Box(),  // on which monitor id should the systemtray be (ids from hyprctl monitors)
+        Separator({ valign: 'center' }),
         ScreenRecord(),
         ColorPicker(),
         Separator({ valign: 'center' }),
@@ -49,7 +68,7 @@ export default monitors => ([
         shared.Desktop(mon),
         ...shared.Corners(mon),
         shared.OSDIndicator(mon),
-        shared.Dock(mon),
+        //shared.Dock(mon),
     ]),
     shared.Quicksettings({ position: 'top right' }),
     shared.Dashboard({ position: 'top' }),
