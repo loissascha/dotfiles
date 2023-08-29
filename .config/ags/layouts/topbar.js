@@ -15,6 +15,7 @@ const { Icon, Label, Box, Button } = ags.Widget;
 const { SystemTray } = ags.Service;
 
 const systemtray = Box({
+  className: 'systemtray panel-button',
   connections: [[SystemTray, box => {
     const arr = SystemTray.items;
         box.children = arr.map(item => Button({
@@ -35,11 +36,12 @@ const Bar = monitor => shared.Bar({
     anchor: 'top left right',
     monitor,
     start: [
-        Launcher({ child: DistroIcon() }),
+        //Launcher({ child: DistroIcon() }),
+        SearchButton(),
         Separator({ valign: 'center' }),
         Workspaces(),
-        Separator({ valign: 'center' }),
-        SearchButton(),
+        //Separator({ valign: 'center' }),
+        //SearchButton(),
         Separator({ valign: 'center'}),
         Client(),
         //MediaIndicator({ hexpand: true, halign: 'end' }),
@@ -51,7 +53,7 @@ const Bar = monitor => shared.Bar({
         NotificationIndicator({ direction: 'right', hexpand: true, halign: 'start' }),
         ags.Widget.Box({ hexpand: true }),
         monitor == "2" ? systemtray : Box(),  // on which monitor id should the systemtray be (ids from hyprctl monitors)
-        Separator({ valign: 'center' }),
+        //Separator({ valign: 'center' }),
         ScreenRecord(),
         ColorPicker(),
         Separator({ valign: 'center' }),
@@ -65,7 +67,7 @@ export default monitors => ([
     ...monitors.map(mon => [
         Bar(mon),
         shared.Notifications(mon, 'slide_down', 'top'),
-        //shared.Desktop(mon),
+        shared.Desktop(mon),
         ...shared.Corners(mon),
         shared.OSDIndicator(mon),
         //shared.Dock(mon),

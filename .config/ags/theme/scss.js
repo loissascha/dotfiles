@@ -18,6 +18,7 @@ $fg_color: ${t.fg_color};
 $hover_fg: ${t.hover_fg};
 
 $wm_gaps: ${t.wm_gaps}px;
+$bar_gaps: ${t.bar_gaps}px;
 $radii: ${t.radii}px;
 $spacing: ${t.spacing}px;
 

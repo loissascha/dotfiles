@@ -45,6 +45,7 @@ const light = {
 
 const misc = {
     wm_gaps: 22,
+    bar_gaps: 22,
     radii: 9,
     spacing: 9,
     shadow: 'rgba(0, 0, 0, .6)',
@@ -135,6 +136,7 @@ const ivory = {
     drop_shadow: false,
     border_width: 2,
     border_opacity: 0,
+    bar_gaps: 12,
     active_gradient: 'to right, $accent, darken($accent, 6%)',
     wallpaper_fg: '$bg_color',
     hypr_active_border: 'rgba(111111FF)',
@@ -144,38 +146,6 @@ const ivory = {
             margin-top: 0;
         }
     `,
-};
-
-const catppuccin_mocha_split = {
-  name: 'catppuccin_mocha_split',
-  icon: '󰄛',
-  ...dark,
-  ...misc, 
-  ...colors,
-  bg_color: 'transparentize(#1e1e2e, 0.3)',
-  accent: '#f38ba8',
-  //accent: '#cba6f7',
-  border_color: '#313244',
-  bar_style: 'separated',
-  widget_bg: '$accent',
-  widget_bg: '#45475a',
-  drop_shadow: false,
-  widget_opacity: 64,
-  drop_shadow: false,
-  border_width: 2, 
-  border_opacity: 0,
-  radii: 9,
-  spacing: 4,
-  wm_gaps: 15,
-  active_gradient: 'to right, $accent, darken($accent, 6%)',
-  hypr_active_border: 'rgba(f38ba8ff)',
-  hypr_inactive_border: 'rgba(11111bff)'
-};
-
-const catppuccin_mocha = {
-  ...catppuccin_mocha_split,
-  name: 'catppuccin_mocha',
-  bar_style: 'floating'
 };
 
 const cutefish = {
@@ -205,14 +175,131 @@ const cherry = {
     bg_color: 'transparentize(#171717, 0.3)',
 };
 
+const catppuccin_latte_split_red = {
+    name: 'latte_split_red',
+    icon: '󰄛',
+    ...light,
+    ...misc,
+    ...colors,
+    bg_color: 'transparentize(#eff1f5, 0.3)',
+    //fg_color: '#4c4f69',
+    accent: '#d20f39',
+    border_color: '#ccd0da',
+    bar_style: 'separated',
+    widget_bg: '#e6e9ef',
+    widget_opacity: 64,
+    drop_shadow: false,
+    border_width: 2,
+    border_opacity: 0,
+    radii: 9,
+    spacing: 9,
+    wm_gaps: 22,
+    bar_gaps: 12,
+    active_gradient: 'to right, $accent, darken($accent, 6%)',
+    hypr_active_border: 'rgba(d20f39ff)',
+    hypr_inactive_border: 'rgba(ccd0daff)'
+};
+
+const catppuccin_latte_red = {
+    ...catppuccin_latte_split_red,
+    name: 'latte_red',
+    bar_style: 'normal',
+    screen_corners: false,
+    bg_color: 'transparentize(#eff1f5, 0.5)',
+    border_color: 'transparentize(#ccd0da, 0.5)'
+};
+
+const catppuccin_mocha_split_red = {
+    name: 'mocha_split_red',
+    icon: '󰄛',
+    ...dark,
+    ...misc,
+    ...colors,
+    bg_color: 'transparentize(#1e1e2e, 0.3)',
+    accent: '#f38ba8',
+    border_color: '#313244',
+    bar_style: 'separated',
+    widget_bg: '#45475a',
+    widget_opacity: 64,
+    drop_shadow: false,
+    border_width: 2,
+    border_opacity: 0,
+    radii: 9,
+    spacing: 9,
+    wm_gaps: 22,
+    bar_gaps: 12,
+    active_gradient: 'to right, $accent, darken($accent, 6%)',
+    hypr_active_border: 'rgba(f38ba8ff)',
+    hypr_inactive_border: 'rgba(11111bff)'
+};
+
+const catppuccin_mocha_red = {
+    ...catppuccin_mocha_split_red,
+    name: 'mocha_red',
+    bar_style: 'normal',
+    bg_color: 'transparentize(#1e1e2e, 0.4)',
+    screen_corners: false,
+    border_color: 'transparentize(#1e1e2e, 0.3)',
+};
+
+const catppuccin_mocha_split_green = {
+    ...catppuccin_mocha_split_red,
+    name: 'mocha_split_green',
+    accent: '#a6e3a1',
+    hypr_active_border: 'rgba(a6e3a1ff)'
+};
+
+const catppuccin_mocha_green = {
+    ...catppuccin_mocha_red,
+    name: 'mocha_green',
+    accent: '#a6e3a1',
+    hypr_active_border: 'rgba(a6e3a1ff)'
+};
+
+const catppuccin_mocha_split_sky = {
+    ...catppuccin_mocha_split_red,
+    name: 'mocha_split_sky',
+    accent: '#89dceb',
+    hypr_active_border: 'rgba(89dcebff)'
+};
+
+const catppuccin_mocha_sky = {
+    ...catppuccin_mocha_red,
+    name: 'mocha_sky',
+    accent: '#89dceb',
+    hypr_active_border: 'rgba(89dcebff)'
+};
+
+const catppuccin_mocha_split_lavender = {
+    ...catppuccin_mocha_split_red,
+    name: 'mocha_split_lavender',
+    accent: '#b4befe',
+    hypr_active_border: 'rgba(b4befeff)'
+};
+
+const catppuccin_mocha_lavender = {
+    ...catppuccin_mocha_red,
+    name: 'mocha_lavender',
+    accent: '#b4befe',
+    hypr_active_border: 'rgba(b4befeff)'
+};
+
 export default [
-    kitty_dark,
-    kitty_light,
-    leaves_dark,
-    leaves_light,
+    //kitty_dark,
+    //kitty_light,
+    //leaves_dark,
+    //leaves_light,
     ivory,
-    cutefish,
-    cherry,
-    catppuccin_mocha,
-    catppuccin_mocha_split
+    //cutefish,
+    //cherry,
+    catppuccin_mocha_red,
+    catppuccin_mocha_green,
+    catppuccin_mocha_sky,
+    catppuccin_mocha_lavender,
+    catppuccin_mocha_split_red,
+    catppuccin_mocha_split_green,
+    catppuccin_mocha_split_sky,
+    catppuccin_mocha_split_lavender,
+    catppuccin_latte_red,
+    catppuccin_latte_split_red
 ];

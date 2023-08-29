@@ -9,11 +9,11 @@ export const Workspaces = props => Box({
         children: [EventBox({
             className: 'eventbox',
             child: hyprland.Workspaces({
-                indicator: () => Box({
+                /*indicator: () => Box({
                     className: 'indicator',
                     valign: 'center',
                     children: [Box({ className: 'fill' })],
-                }),
+                }),*/
             }),
         })],
     })],

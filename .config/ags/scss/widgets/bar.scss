@@ -9,7 +9,7 @@ $float: 5px;
         > * {
             @include floating_widget;
             border-radius: $radii;
-            margin: $wm_gaps $float;
+            margin: $bar_gaps $float;
             transition: $transition;
         }
 
@@ -65,7 +65,7 @@ $float: 5px;
 
     @if $bar_style == 'floating' {
         @include floating_widget;
-        margin: $wm_gaps;
+        margin: $bar_gaps $wm_gaps;
         padding: 0;
     }
     
@@ -119,7 +119,7 @@ $float: 5px;
     }
 
     .workspaces {
-        > * { padding: 10px; }
+        > * { padding: 5px; }
 
         .eventbox {
             transition: $transition;
@@ -139,9 +139,11 @@ $float: 5px;
                 min-width: 10px;
                 min-height: 10px;
                 border-radius: $radii*0.6;
-                border: 2px solid transparent;
+                border: 1px solid transparent;
                 transition: border-color $transition;
                 margin: 0 $spacing/2;
+                padding-bottom:1px;
+                padding-top:1px;
 
                 .fill {
                     transition: background-color $transition;
@@ -157,20 +159,33 @@ $float: 5px;
 
             &.empty .indicator {
                 border-color: transparentize($fg_color, 0.3);
+                //border-color: #1e1e2e;
+                border-color:transparent;
+                //border:0;
             }
 
             &.occupied .indicator {
                 border-color: transparentize($fg_color, 0.1);
+                //border:0;
+                border-color:transparent;
+                color:$accent;
                 .fill { background-color: transparentize($fg_color, 0.1) }
             }
 
             &:hover .indicator {
                 border-color: transparentize($accent, 0.2);
+                border-color:transparent;
+                color:$accent;
+                color:darken($accent, 8%);
                 .fill { background-color: transparentize($accent, 0.2) }
             }
 
             &.active .indicator, &:active .indicator {
                 border-color: $accent;
+                border-color:transparent;
+                border-bottom:1px solid #ddd;
+                border-radius:0;
+                // color: yellow;
                 .fill { background-color: $accent }
             }
 
@@ -194,7 +209,10 @@ $float: 5px;
 
         @if $bar_style != 'separated' {
             margin: 0;
-            button > * { margin: 0 $float; }
+            button > * { 
+              margin: 0 $float; 
+//              margin: 0 $bar_gaps;
+            }
         }
     }
 }
@@ -203,3 +221,27 @@ $float: 5px;
   padding-left:10px;
   padding-right:13px;
 }
+
+.search-button.panel-button > * {
+    /*padding-left:10px;
+    padding-right:14px;*/
+    padding-right:18px;
+    color: $accent;
+}
+
+
+/*.systemtray.panel-button > * {
+  background:orange;
+  padding-right:10;
+}
+
+.systemtray.panel-button {
+  background:green;
+}
+
+.systemtray.panel-button > * > * {
+  background:blue;
+  margin-right:0;
+  padding-right:0;
+
+}*/

@@ -11,7 +11,22 @@ export const Workspaces = ({
     ...props,
     children: Array.from({ length: fixed }, (_, i) => i + 1).map(i => Button({
         onClicked: () => execAsync(`hyprctl dispatch workspace ${i}`).catch(print),
-        child: indicator ? indicator() : Label(`${i}`),
+        //child: indicator ? indicator() : Label(` ${i} `),
+        child: indicator ? indicator() : Box({
+            className: 'indicator',
+            valign: 'center',
+            children: [
+                i === 1 ? Label('') :
+                i === 2 ? Label(' ') :
+                i === 3 ? Label(' ') :
+                i === 4 ? Label(' ') :
+                i === 5 ? Label('󰓓 ') :
+                i === 6 ? Label(' ') :
+                i === 7 ? Label('') :
+                i === 8 ? Label('󰡟 ') :
+                i === 9 ? Label(' ') :
+                Label(` ${i} `)]
+        }),
         connections: [[Hyprland, btn => {
             const { workspaces, active } = Hyprland;
             const occupied = workspaces.has(i) && workspaces.get(i).windows > 0;
