@@ -4,8 +4,8 @@ shell_patterns=true
 auto_save_setup=true
 preallocate_space=false
 auto_menu=false
-use_internal_view=true
-use_internal_edit=true
+use_internal_view=false
+use_internal_edit=false
 clear_before_exec=true
 confirm_delete=true
 confirm_overwrite=true
@@ -87,12 +87,12 @@ skin=catppuccin
 
 [Layout]
 output_lines=0
-left_panel_size=139
+left_panel_size=92
 top_panel_size=0
 message_visible=true
 keybar_visible=true
 xterm_title=true
-command_prompt=true
+command_prompt=false
 menubar_visible=true
 free_space=true
 horizontal_split=false
@@ -133,8 +133,10 @@ mouse_move_pages=true
 filetype_mode=true
 permission_mode=false
 torben_fj_mode=false
-quick_search_mode=2
+quick_search_mode=0
 select_flags=6
+
+simple_swap=false
 
 [Panelize]
 Find *.orig after patching=find . -name \\*.orig -print
