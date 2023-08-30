@@ -14,7 +14,7 @@ import { PanelButton as SearchButton } from './widgets/search.js';
 const { Icon, Label, Box, Button } = ags.Widget;
 const { SystemTray } = ags.Service;
 
-const systemtray = Box({
+/*const systemtray = Box({
   className: 'systemtray panel-button',
   connections: [[SystemTray, box => {
     const arr = SystemTray.items;
@@ -30,6 +30,22 @@ const systemtray = Box({
             tooltipMarkup: SystemTray.get_tooltip_markup(item)
         }));
   }]],
+});*/
+
+const systemtray = Box({
+  className: 'systemtray panel-button',
+  connections: [[SystemTray, box => {
+    box.children = SystemTray.items.map(item => Button({
+      child: Icon(),
+      onPrimaryClick: (_, event) => item.activate(event),
+      onSecondaryClick: (_, event) => item.openMenu(event),
+      connections: [[item, button => {
+        button.child.icon = item.icon;
+        button.tooltipMarkup = item.tooltipMarkup;
+      }]],
+    }));
+    }
+  ]]
 });
 
 const Bar = monitor => shared.Bar({
