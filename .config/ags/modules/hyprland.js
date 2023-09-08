@@ -17,14 +17,14 @@ export const Workspaces = ({
             valign: 'center',
             children: [
                 i === 1 ? Label('') :
-                i === 2 ? Label(' ') :
-                i === 3 ? Label(' ') :
-                i === 4 ? Label(' ') :
-                i === 5 ? Label('󰓓 ') :
-                i === 6 ? Label(' ') :
+                i === 2 ? Label('') :
+                i === 3 ? Label('') :
+                i === 4 ? Label('') :
+                i === 5 ? Label('󰓓') :
+                i === 6 ? Label('') :
                 i === 7 ? Label('') :
-                i === 8 ? Label('󰡟 ') :
-                i === 9 ? Label(' ') :
+                i === 8 ? Label('󰡟') :
+                i === 9 ? Label('') :
                 Label(` ${i} `)]
         }),
         connections: [[Hyprland, btn => {

@@ -12,8 +12,10 @@ I did some changes to it to better fit my needs.
 - Removed the media player thats included in the top bar
 - Removed swww dependency
 - Changed to show 9 instead of 7 workplaces
+- Changed to show icons for workspace indicators
 - Changed some date formats to my liking
-- Changed the colors of the leaves dark theme
+- Removed most themes and added my own catppuccin themes 
+- Added systemtray
 
 # Alacritty
 used catppuccin theme

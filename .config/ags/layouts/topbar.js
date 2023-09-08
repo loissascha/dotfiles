@@ -68,6 +68,7 @@ const Bar = monitor => shared.Bar({
     end: [
         NotificationIndicator({ direction: 'right', hexpand: true, halign: 'start' }),
         ags.Widget.Box({ hexpand: true }),
+        //systemtray,
         monitor == "2" ? systemtray : Box(),  // on which monitor id should the systemtray be (ids from hyprctl monitors)
         //Separator({ valign: 'center' }),
         ScreenRecord(),

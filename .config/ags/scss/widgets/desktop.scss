@@ -31,12 +31,14 @@ window.desktop {
 
         .clock-box {
             border-radius: max($radii - 5px, 0);
-            padding: 0 14px;
+            padding: 10px 14px;
+            padding-bottom:0;
 
             .clock {
                 color: $wallpaper_fg;
                 font-size: 140px;
                 font-family: $mono_font;
+                padding-top:30px;
             }
 
             .separator-box {
