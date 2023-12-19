@@ -65,7 +65,7 @@ const misc = {
     desktop_clock: 'center center',
     font: 'Ubuntu Nerd Font',
     mono_font: 'Mononoki Nerd Font',
-    font_size: 16,
+    font_size: 14,
 };
 
 const colors = {
@@ -158,6 +158,25 @@ const ivory = {
     `,
 };
 
+const blackLove = {
+    wallpaper: WP + '685192.jpg',
+    name: 'blackLove',
+    icon: 'B',
+    ...dark,
+    ...misc,
+    ...colors,
+    bg_color: '#000000',
+    bar_style: 'normal',
+    spacing: 5,
+    wm_gaps: 8,
+    bar_gaps: 5,
+    accent: '#ffb259',
+    border_color: '#000000',
+    active_gradient: 'to right, $accent, darken($accent, 6%)',
+    hypr_active_border: 'rgba(ffffffff)',
+    hypr_inactive_border: 'rgba(000000ff)'
+};
+
 const cutefish = {
     ...kitty_dark,
     wallpaper: WP + 'cutefish.jpeg',
@@ -202,8 +221,8 @@ const catppuccin_mocha_split_red = {
     border_width: 2,
     border_opacity: 0,
     radii: 9,
-    spacing: 9,
-    wm_gaps: 12,
+    spacing: 3,
+    wm_gaps: 8,
     bar_gaps: 8,
     active_gradient: 'to right, $accent, darken($accent, 6%)',
     hypr_active_border: 'rgba(f38ba8ff)',
@@ -239,5 +258,6 @@ export default [
     cherry,
     catppuccin_mocha_split_red,
     catppuccin_mocha_red,
-    catppuccin_mocha_green
+    catppuccin_mocha_green,
+    blackLove
 ];
