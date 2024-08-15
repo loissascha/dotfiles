@@ -13,6 +13,7 @@ if status is-interactive
     alias runGodotMono="cd ~/Software/Godot_v4.2.2-stable_mono && nohup ./Godot_v4.2.2-stable_mono_linux.x86_64 & disown"
     alias vim="nvim"
     alias lvim="/home/sascha/.local/bin/lvim"
+    alias cat="bat"
     #alias mc="yazi"
     #alias fm="yazi"
     
