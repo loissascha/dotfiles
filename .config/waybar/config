@@ -1,0 +1,140 @@
+[
+  {
+    "position": "top",
+    "layer": "top",
+    "margin": "0",
+    "height": 15,
+    "spacing": 2,
+    "modules-center": [
+      "sway/workspaces"
+    ],
+    "modules-left": [
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "sway/window",
+      "sway/mode"
+    ],
+    "modules-right": [
+      "tray",
+      "custom/swaync",
+      "clock",
+      "custom/wlogout"
+    ],
+    "clock": {
+      "format": "{:%H:%M}",
+      "interval": 1,
+      "timezone": "Europe/Berlin",
+      "tooltip-format": "<big>{:%a %Y %B %d}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+      "format": "{usage}% "
+    },
+    "custom/swaync": {
+      "format": "",
+      "on-click": "sleep 0.1 && swaync-client -op"
+    },
+    "custom/wlogout": {
+      "format": "",
+      "on-click": "wlogout -c 5 -r 5 -p layer-shell"
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "󱚌 (1)",
+        "2": "󰖟 (2)",
+        "3": " (3)",
+        "4": " (4)",
+        "5": "󰋩 (5)",
+        "6": " (6)",
+        "7": "󰄖 (7)",
+        "8": "󰑴 (8)",
+        "9": "󱎓 (9)",
+        "10": " (10)",
+        "11": "󱚌 (1)",
+        "12": "󰖟 (2)",
+        "13": " (3)",
+        "14": " (4)",
+        "15": "󰋩 (5)",
+        "16": " (6)",
+        "17": "󰄖 (7)",
+        "18": "󰑴 (8)",
+        "19": "󱎓 (9)",
+        "20": " (10)",
+        "21": "󱚌 (1)",
+        "22": "󰖟 (2)",
+        "23": " (3)",
+        "24": " (4)",
+        "25": "󰋩 (5)",
+        "26": " (6)",
+        "27": "󰄖 (7)",
+        "28": "󰑴 (8)",
+        "29": "󱎓 (9)",
+        "30": " (10)",
+      },
+      "on-click": "activate",
+      "on-scroll-down": "hyprctl dispatch workspace e+1",
+      "on-scroll-up": "hyprctl dispatch workspace e-1"
+    },
+    "sway/workspaces": {
+	"persistent-workspaces": {
+		"1": ["DP-2"],
+		"2": ["DP-2"],
+		"3": ["DP-2"],
+		"4": ["DP-2"],
+		"5": ["DP-2"],
+		"6": ["DP-2"],
+		"7": ["DP-2"],
+		"8": ["DP-2"],
+		"9": ["DP-2"],
+		"10": ["DP-2"],
+		"11": ["DP-3"],
+		"12": ["DP-3"],
+		"13": ["DP-3"],
+		"14": ["DP-3"],
+		"15": ["DP-1"],
+		"16": ["DP-1"],
+		"17": ["DP-1"],
+		"18": ["DP-1"],
+	}
+    },
+    "sway/mode": {
+	"format": "  {}  " 
+    },
+    "memory": {
+      "format": "{}% "
+    },
+    "pulseaudio": {
+      "format": "{volume}% {icon}  {format_source}",
+      "format-bluetooth": "{volume}% {icon}  {format_source}",
+      "format-bluetooth-muted": "󰸈 {icon}  {format_source}",
+      "format-icons": {
+        "car": "",
+        "default": [
+          "",
+          "",
+          ""
+        ],
+        "hands-free": "",
+        "headphone": "",
+        "headset": "",
+        "phone": "",
+        "portable": ""
+      },
+      "format-muted": "󰸈 {format_source}",
+      "format-source": "{volume}% ",
+      "format-source-muted": " ",
+      "on-click": "pavucontrol",
+      "scroll-step": 1
+    },
+    "tray": {
+      "spacing": 8
+    },
+    "wlr/taskbar": {
+      "format": "{icon}",
+      "icon-size": 14,
+      "on-click": "activate",
+      "on-click-middle": "close"
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[opener]
+edit = [
+	{ run = 'nvim "$@"', desc = "Nvim", block = true },
+	{ run = 'xdg-open "$@"', desc = "XDG Open" },
+]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+]
+appimg = [
+	{ run = '"$@"', desc = "Open AppImage", block = true },
+]
+
+[open]
+rules = [
+	{ name = "*.AppImage", use = "appimg" },
+	{ name = "*", use = "edit" }
+]

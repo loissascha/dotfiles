@@ -1,0 +1,9 @@
+\033[1m[*user*]@[*hostname*]
+\033[1m[*osName*]
+[*kernelVersion*]
+[*desktopSession*] ([*desktopSessionType*])
+[*cpuModel*]
+[*gpuModel*]
+[*memUsed*] GB / [*memTotal*] GB ([*memUsedPercentColored*])
+[*packages*] [*flatpakPackages*] [*snaps*]
+[*uptime*]
