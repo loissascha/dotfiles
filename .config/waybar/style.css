@@ -79,6 +79,18 @@ window#waybar {
     background: #b4befe;
 }
 
+#workspaces button.empty {
+    background:none;
+}
+#workspaces button.active.empty {
+    color: #000000;
+    background: #b4befe;
+}
+
+#workspaces button.urgent {
+    color: red;
+}
+
 #workspaces button.persistent {
     background:none;
 }
