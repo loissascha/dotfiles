@@ -1,0 +1,31 @@
+#dos theme
+font = VT323
+corner-radius = 60
+outline-color = #D3D1B9
+outline-width = 3
+border-color = #E3E1C9
+border-width = 8
+background-color = #000000
+text-color = #0A3
+selection-color = #0F6
+prompt-text = "~ "
+num-results = 15
+hide-cursor = true
+width = 740
+height = 640
+
+# dark paper theme
+font = Fanwood Text
+
+outline-width = 0
+border-width = 0
+corner-radius = 0
+padding-left = 2%
+padding-right = 2%
+
+background-color = #111
+text-color = #f9fbff
+selection-color = #933
+
+
+hide-cursor = true
