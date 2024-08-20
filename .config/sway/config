@@ -254,8 +254,6 @@ bindsym $mod+n reload
 # exit i3 (logs you out of your X session)
 # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-# restart waybar
-bindsym $mod+m exec "pkill waybar ; waybar"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -293,10 +291,13 @@ bindsym $mod+d mode "resize"
 bar {
         #status_command i3status
         status_command i3status-rs
-        position bottom
+        position top
         #status_command while ~/.config/sway/status.sh; do sleep 1; done
 }
 #exec waybar
+
+# restart waybar
+#bindsym $mod+m exec "pkill waybar ; waybar"
 
 default_border pixel
 

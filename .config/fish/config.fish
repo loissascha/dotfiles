@@ -20,7 +20,7 @@ if status is-interactive
     export PiANetConnection='server=localhost;port=30306;database=piaNetTest;user=root;password=root'
     export PATH=$PATH:$HOME/.local/bin
     export PATH=$PATH:/usr/bin
-    export PATH=$PATH:$HOME/.dotnet/tools:$HOME/go/bin
+    export PATH=$PATH:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.local/bin
 
     #fastfetch
     gofetch
