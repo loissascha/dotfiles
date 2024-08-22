@@ -14,6 +14,7 @@ if status is-interactive
     alias vim="nvim"
     alias lvim="/home/sascha/.local/bin/lvim"
     alias cat="bat"
+    alias benchmark="hyperfine"
     #alias mc="yazi"
     #alias fm="yazi"
     
