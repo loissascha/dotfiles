@@ -3,19 +3,22 @@ window#waybar {
 }
 
 #cpu {
-    color: #b7bcba;
+    background:#eba0ac;
+    color: #000000;
 }
 
 #memory {
-    color: #b7bcba;
+    color: #000000;
+    background: #cba6f7;
 }
 
 #pulseaudio {
-    color: #b7bcba;
+    color: #000000;
+    background:#f9e2af;
 }
 
 #tray {
-    color: #b7bcba;
+    background:#313244;
 }
 
 #taskbar button {
@@ -28,12 +31,14 @@ window#waybar {
 }
 
 #clock {
-    color: #b7bcba;
+    color: #000000;
+    background: #cba6f7;
     font-weight:bold;
 }
 
 #custom-wlogout {
-    color: #b7bcba;
+    color: #000000;
+    background: #f38ba8;
     padding-left: 10px;
     padding-right: 13px;
     border-radius:8px;
@@ -41,14 +46,16 @@ window#waybar {
 }
 
 #custom-swaync {
-    color: #b7bcba;
+    color: #000000;
+    background: #f9e2af;
     padding-left: 10px;
     padding-right: 13px;
     border-radius:8px;
 }
 
 #window {
-    color: #b7bcba;
+    color: #cdd6f4;
+    background: #313244;
 }
 
 #workspaces {
@@ -59,19 +66,19 @@ window#waybar {
 }
 
 #workspaces button {
-    color: #b7bcba;
+    color: #b4befe;
     background:#1e1e2e;
     padding: 1px 5px;
 }
 
 #workspaces button.active {
     color: #000000;
-    background: #b7bcba;
+    background: #b4befe;
 }
 
 #workspaces button.focused {
     color: #000000;
-    background: #b7bcba;
+    background: #b4befe;
 }
 
 #workspaces button.empty {
@@ -79,7 +86,7 @@ window#waybar {
 }
 #workspaces button.active.empty {
     color: #000000;
-    background: #b7bcba;
+    background: #b4befe;
 }
 
 #workspaces button.urgent {
