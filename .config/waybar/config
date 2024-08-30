@@ -22,7 +22,7 @@
       "custom/wlogout"
     ],
     "clock": {
-      "format": "{:%H:%M}",
+      "format": "{:%a %d.%m %H:%M}",
       "interval": 1,
       "timezone": "Europe/Berlin",
       "tooltip-format": "<big>{:%a %Y %B %d}</big>\n<tt><small>{calendar}</small></tt>"
