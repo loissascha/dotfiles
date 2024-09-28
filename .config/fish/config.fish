@@ -2,7 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 
 
-    alias dotnet-shell="nix-shell ~/.nix-dotfiles/nix/shells/dotnet.nix --run fish"
     alias ga="git add"
     alias gc="git commit -m"
     alias gp="git push"
@@ -15,6 +14,8 @@ if status is-interactive
     alias lvim="/home/sascha/.local/bin/lvim"
     alias cat="bat"
     alias benchmark="hyperfine"
+    alias pianetdev="/home/sascha/git/toptech/pianet.sh"
+    alias mangoverlaydev="/home/sascha/git/github/loissascha/mangoverlay.sh"
     #alias mc="yazi"
     #alias fm="yazi"
     
@@ -26,6 +27,9 @@ if status is-interactive
     #fastfetch
     gofetch
 end
+
+#export MANGOHUD=1
+#export ENABLE_VULKAN_LAYER_MANGOHUD=1
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
