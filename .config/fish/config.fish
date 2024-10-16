@@ -16,6 +16,7 @@ if status is-interactive
     alias benchmark="hyperfine"
     alias pianetdev="/home/sascha/git/toptech/pianet.sh"
     alias mangoverlaydev="/home/sascha/git/github/loissascha/mangoverlay.sh"
+    alias benchmarkdev="/home/sascha/git/github/loissascha/benchmark.sh"
     #alias mc="yazi"
     #alias fm="yazi"
     
