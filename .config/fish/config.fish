@@ -17,6 +17,7 @@ if status is-interactive
     alias pianetdev="/home/sascha/git/toptech/pianet.sh"
     alias mangoverlaydev="/home/sascha/git/github/loissascha/mangoverlay.sh"
     alias benchmarkdev="/home/sascha/git/github/loissascha/benchmark.sh"
+    alias mysqlmanagerdev="/home/sascha/git/github/loissascha/mysqlmanager.sh"
     #alias mc="yazi"
     #alias fm="yazi"
     
