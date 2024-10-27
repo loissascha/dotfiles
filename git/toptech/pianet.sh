@@ -4,6 +4,8 @@
 PROJECT_DIR_1="/home/sascha/git/toptech/PiANet/PiAPI/PiANetAPI"
 PROJECT_DIR_2="/home/sascha/git/toptech/PiANet/PiAstro/PiAstro"
 
+cd /home/sascha/git/toptech/PiANet
+
 # Session name
 SESSION="pianet"
 
