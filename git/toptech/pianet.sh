@@ -3,6 +3,7 @@
 # Project directories
 PROJECT_DIR_1="/home/sascha/git/toptech/PiANet/PiAPI/PiANetAPI"
 PROJECT_DIR_2="/home/sascha/git/toptech/PiANet/PiAstro/PiAstro"
+PROJECT_DIR_3="/home/sascha/git/toptech/go-pia-analyse"
 
 cd /home/sascha/git/toptech/PiANet
 
@@ -34,6 +35,15 @@ if [ $? != 0 ]; then
   tmux split-window -v -t $SESSION:1.1
   tmux send-keys -t $SESSION:1.2 "cd $PROJECT_DIR_2 && lazygit" C-m
   tmux select-pane -t $SESSION:1.0
+
+  # Window 3: Go-Pia-Analyse
+  tmux new-window -t $SESSION -n "Analyse"
+  tmux send-keys -t $SESSION:2 "cd $PROJECT_DIR_3" C-m
+  tmux split-window -h -t $SESSION:2
+  tmux send-keys -t $SESSION:2 "cd $PROJECT_DIR_3" C-m
+  tmux split-window -v -t $SESSION:2.1
+  tmux send-keys -t $SESSION:2.2 "cd $PROJECT_DIR_3 && lazygit" C-m
+  tmux select-pane -t $SESSION:2.0
 fi
 
 # Attach to the session
