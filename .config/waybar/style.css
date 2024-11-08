@@ -1,21 +1,26 @@
 window#waybar {
     background:#000000;
+	background:rgba(0, 0, 0, 0.3);
 }
 
 #cpu {
     color: #b7bcba;
+	text-shadow: 1px 1px 2px black;
 }
 
 #memory {
     color: #b7bcba;
+	text-shadow: 1px 1px 2px black;
 }
 
 #pulseaudio {
     color: #b7bcba;
+	text-shadow: 1px 1px 2px black;
 }
 
 #tray {
     color: #b7bcba;
+	text-shadow: 1px 1px 2px black;
 }
 
 #taskbar button {
@@ -54,13 +59,12 @@ window#waybar {
 #workspaces {
     padding: 0;
     border-radius:8px;
-    background: #313244;
-    background: #000000;
 }
 
 #workspaces button {
     color: #b7bcba;
     background:#1e1e2e;
+	background:rgba(0, 0, 0, 0.3);
     padding: 1px 5px;
 }
 
