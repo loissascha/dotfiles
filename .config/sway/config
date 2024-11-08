@@ -25,13 +25,13 @@ set $monitor-right DP-1
 
 # Asus Monitor
 output $monitor-right { 
-        mode 1920x1080@144.001Hz
+        mode 2560x1440@165.000Hz
         pos 5120 0
 }
 
 # ViewSonic Elite
 output $monitor-middle {
-        mode 2560x1440@239.970Hz
+        mode 2560x1440@239.880Hz
         pos 2560 0
 }
 
