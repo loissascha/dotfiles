@@ -18,10 +18,12 @@ if status is-interactive
     alias mangoverlaydev="/home/sascha/git/github/loissascha/mangoverlay.sh"
     alias benchmarkdev="/home/sascha/git/github/loissascha/benchmark.sh"
     alias mysqlmanagerdev="/home/sascha/git/github/loissascha/mysqlmanager.sh"
+	alias countlines="tokei"
     #alias mc="yazi"
     #alias fm="yazi"
     
-    export PiANetConnection='server=localhost;port=30306;database=piaNetTest;user=root;password=root'
+    #export PiANetConnection='server=localhost;port=30306;database=piaNetTest;user=root;password=root'
+    export PiANetConnection='Host=localhost;Port=5432;Database=piaNetTest;Username=postgres;Password=root'
     export PATH=$PATH:$HOME/.local/bin
     export PATH=$PATH:/usr/bin
     export PATH=$PATH:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.local/bin
