@@ -20,6 +20,7 @@ if status is-interactive
     alias mysqlmanagerdev="/home/sascha/git/github/loissascha/mysqlmanager.sh"
 	alias countlines="tokei"
     alias mc="yazi"
+	alias design="nwg-look"
     #alias fm="yazi"
     
     #export PiANetConnection='server=localhost;port=30306;database=piaNetTest;user=root;password=root'
