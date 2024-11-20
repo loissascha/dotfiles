@@ -26,6 +26,16 @@ alert = 10.0
 format = " $icon root: $available.eng(w:2) "
 
 [[block]]
+block = "disk_space"
+path = "/home/sascha"
+info_type = "available"
+alert_unit = "GB"
+interval = 20
+warning = 20.0
+alert = 10.0
+format = " $icon home: $available.eng(w:2) "
+
+[[block]]
 block = "sound"
 [[block.click]]
 button = "left"
@@ -33,12 +43,12 @@ cmd = "pavucontrol"
 
 [[block]]
 block = "time"
-interval = 5
+interval = 15
 format = " $timestamp.datetime(f:'%a %d.%m.%Y %R') "
 
 [[block]]
 block = "menu"
 text = "   "
 [[block.items]]
-display = "Logout"
+display = "   "
 cmd = "wlogout -c 5 -r 5 -p layer-shell"
