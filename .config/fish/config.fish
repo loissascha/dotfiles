@@ -7,7 +7,7 @@ if status is-interactive
     alias gp="git push"
     alias gb="git checkout -b"
     alias gitui="lazygit"
-    alias multi="zellij"
+    alias multi="tmux"
     alias du="dust"
     alias runGodotMono="cd ~/Software/Godot_v4.2.2-stable_mono && nohup ./Godot_v4.2.2-stable_mono_linux.x86_64 & disown"
     alias vim="nvim"
@@ -19,7 +19,7 @@ if status is-interactive
     alias benchmarkdev="/home/sascha/git/github/loissascha/benchmark.sh"
     alias mysqlmanagerdev="/home/sascha/git/github/loissascha/mysqlmanager.sh"
 	alias countlines="tokei"
-    #alias mc="yazi"
+    alias mc="yazi"
     #alias fm="yazi"
     
     #export PiANetConnection='server=localhost;port=30306;database=piaNetTest;user=root;password=root'
@@ -31,9 +31,6 @@ if status is-interactive
     #fastfetch
     gofetch
 end
-
-#export MANGOHUD=1
-#export ENABLE_VULKAN_LAYER_MANGOHUD=1
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
