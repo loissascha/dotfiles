@@ -55,6 +55,7 @@ exec /usr/lib/polkit-kde-authentication-agent-1
 exec_always sleep 30 && xrandr --output $monitor-middle --primary
 exec localectl set-x11-keymap us pc105 altgr-intl compose:menu,level3:ralt_switch
 exec autotiling
+exec swayidle -w timeout 300 '/home/sascha/lock_and_suspend.sh'
 
 # exec /home/sascha/rust/randomWallpaper/target/release/randomWallpaper /home/sascha/Pictures/randomWallpaper/
 
@@ -141,6 +142,7 @@ bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
+
 
 # bindsym $mod+o exec swaymsg "output * dpms off"
 bindsym $mod+o exec /home/sascha/lock_and_suspend.sh
