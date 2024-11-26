@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Project directories
-PROJECT_DIR_1="/home/sascha/git/github/loissascha/go-logger"
+PROJECT_DIR_1="/home/sascha/git/github/loissascha/go-logger/logger"
 
 cd $PROJECT_DIR_1
 
