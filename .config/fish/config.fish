@@ -32,6 +32,9 @@ if status is-interactive
     export PATH=$PATH:/usr/bin
     export PATH=$PATH:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.local/bin
 
+	export ANDROID_HOME=$HOME/Android/Sdk
+	export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
+
     #fastfetch
     gofetch
 end
