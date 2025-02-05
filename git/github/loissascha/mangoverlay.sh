@@ -15,13 +15,13 @@ if [ $? != 0 ]; then
   tmux new-session -d -s $SESSION -n "code"
 
   # Window 1: First project
-  tmux send-keys -t $SESSION "cd $PROJECT_DIR_1" C-m
-  tmux split-window -h -t $SESSION
-  tmux send-keys -t $SESSION "cd $PROJECT_DIR_1" C-m
+  # tmux send-keys -t $SESSION "cd $PROJECT_DIR_1" C-m
+  # tmux split-window -h -t $SESSION
+  # tmux send-keys -t $SESSION "cd $PROJECT_DIR_1" C-m
   #tmux select-pane -t $SESSION.0
-  tmux split-window -v -t $SESSION.1
-  tmux send-keys -t $SESSION.2 "cd $PROJECT_DIR_1 && lazygit" C-m
-  tmux select-pane -t $SESSION.0
+  # tmux split-window -v -t $SESSION.1
+  # tmux send-keys -t $SESSION.2 "cd $PROJECT_DIR_1 && lazygit" C-m
+  # tmux select-pane -t $SESSION.0
 
 fi
 
