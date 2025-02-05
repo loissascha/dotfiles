@@ -1,3 +1,3 @@
 theme = GithubDark
 shell-integration = fish
-window-decoration = false
+window-decoration = none
