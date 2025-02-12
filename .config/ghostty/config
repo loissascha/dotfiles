@@ -1,3 +1,4 @@
 theme = GithubDark
 shell-integration = fish
 window-decoration = none
+gtk-titlebar = false
