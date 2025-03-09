@@ -19,6 +19,7 @@ if status is-interactive
     alias piagodev="/home/sascha/git/toptech/pianetgo.sh"
     alias mangoverlaydev="/home/sascha/git/github/loissascha/mangoverlay.sh"
 	alias dbplanningdev="/home/sascha/git/github/loissascha/db-planning-tool.sh"
+	alias expochoresdev="/home/sascha/git/github/loissascha/expo-chores.sh"
     alias benchmarkdev="/home/sascha/git/github/loissascha/benchmark.sh"
     alias mysqlmanagerdev="/home/sascha/git/github/loissascha/mysqlmanager.sh"
 	alias appmemorydev="/home/sascha/git/github/loissascha/go-appmemory.sh"
