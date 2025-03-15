@@ -6,6 +6,7 @@ if status is-interactive
     alias gc="git commit -m"
     alias gp="git push"
     alias gb="git checkout -b"
+	alias btrfsbalance="sudo btrfs balance start -dusage=50 /"
     alias gitui="lazygit"
     alias multi="tmux"
     alias du="dust"
