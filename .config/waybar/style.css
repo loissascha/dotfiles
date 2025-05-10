@@ -1,6 +1,5 @@
 window#waybar {
-  background: #000000;
-  background: rgba(0, 0, 0, 0.9);
+  background: none;
 }
 
 #cpu {
@@ -43,6 +42,9 @@ window#waybar {
   padding-right: 13px;
   border-radius: 8px;
   font-weight: bold;
+  background: black;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 #custom-swaync {
@@ -50,15 +52,23 @@ window#waybar {
   padding-left: 10px;
   padding-right: 13px;
   border-radius: 8px;
+  background: black;
+  margin-top: 5px;
 }
 
 #window {
   color: #b7bcba;
+  margin-top: 5px;
 }
 
 #workspaces {
   padding: 0;
   border-radius: 8px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: black;
 }
 
 /* hyprland: has content but is not selected */
@@ -104,13 +114,17 @@ window#waybar {
 #tray,
 #clock,
 #pulseaudio,
+#network,
 #window {
   padding: 0 10px;
   border-radius: 8px;
+  background: black;
+  margin-top: 5px;
 }
 
 #mode {
   background: #eba0ac;
   color: #000000;
   border-radius: 8px;
+  margin-top: 5px;
 }
