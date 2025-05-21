@@ -32,6 +32,10 @@ if status is-interactive
 	alias countlines="tokei"
     alias mc="yazi"
 	alias design="nwg-look"
+	alias tnew="tmuxinator new"
+	alias tstart="tmuxinator start"
+	alias tstop="tmuxinator stop"
+	alias tlist="tmuxinator list"
     #alias fm="yazi"
     
     #export PiANetConnection='server=localhost;port=30306;database=piaNetTest;user=root;password=root'
