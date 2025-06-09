@@ -1,4 +1,4 @@
-theme = GithubDark
+theme = KanagawaWave
 shell-integration = fish
 window-decoration = none
 gtk-titlebar = false

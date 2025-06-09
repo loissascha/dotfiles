@@ -1,6 +1,7 @@
+source ~/.config/fish/themes/kanagawa.fish
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
-
 
     alias ga="git add"
     alias gc="git commit -m"
@@ -43,6 +44,7 @@ if status is-interactive
     export PATH=$PATH:$HOME/.local/bin
     export PATH=$PATH:/usr/bin
     export PATH=$PATH:$HOME/.dotnet/tools:$HOME/go/bin:$HOME/.local/bin
+	export EDITOR=nvim
 
 	export ANDROID_HOME=$HOME/Android/Sdk
 	export ANDROID_NDK_HOME=$ANDROID_HOME/ndk-bundle
