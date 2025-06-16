@@ -1,0 +1,12 @@
+# /home/sascha/.config/tmuxinator/blog.yml
+
+name: blog
+root: ~/git/github/loissascha/blog
+
+windows:
+  - code:
+      layout: main-vertical
+  - dev:
+      layout: main-horizontal
+  - git:
+      layout: main-vertical
