@@ -1,0 +1,10 @@
+# /home/sascha/.config/tmuxinator/hyprion.yml
+
+name: hyprion
+root: ~/git/github/loissascha/hyprion
+
+windows:
+  - code:
+      layout: main-vertical
+  - dev:
+      layout: main-vertical

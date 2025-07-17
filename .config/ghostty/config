@@ -1,4 +1,4 @@
-theme = KanagawaWave
+theme = KansoZen
 shell-integration = fish
 window-decoration = none
 gtk-titlebar = false

@@ -1,0 +1,10 @@
+# /home/sascha/.config/tmuxinator/mangoverlay.yml
+
+name: mangoverlay
+root: ~/git/github/loissascha/go-mangohud-configurator/mangohud-configurator
+
+windows:
+  - code:
+      layout: main-vertical
+  - dev:
+      layout: main-vertical

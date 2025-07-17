@@ -1,0 +1,25 @@
+# /home/sascha/.config/tmuxinator/webcheck.yml
+
+name: webcheck
+root: ~/git/github/loissascha/website-unavailable-checker
+
+windows:
+  - backend:
+      layout: main-vertical
+      panes:
+        - cd backend
+  - frontend:
+      layout: main-vertical
+      panes:
+        - cd frontend
+  - dev:
+      layout: tiled
+      panes:
+        - cd backend
+        - cd backend
+        - cd frontend
+  - gemini:
+      layout: even-horizontal
+      panes:
+        - cd backend
+        - cd frontend
